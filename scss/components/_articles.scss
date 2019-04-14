@@ -1,0 +1,84 @@
+.articles {
+  text-align: center;
+
+  &__article {
+    width: 280px;
+    // max-width: 400px;
+    margin: 0px auto 30px auto;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__title {
+    font-size: 2.3rem;
+    color: #983b05;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    hyphens: manual;
+  }
+
+  &__desc {
+    font-family: "Century Gothic";
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media(min-width:600px) {
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// @media(min-width:940px) {
+//   .c-introduction {
+//     &__con {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       align-items: flex-start;
+//     }
+
+//     &__box {
+//       flex-basis: calc(30% - 10px);
+//       margin: 0px 5px 50px 5px;
+//     }
+//   }
+// }
+
+// @media(min-width:1024px) {
+//   .c-introduction {
+//     padding-top: 20px;
+//     &__box {
+//       margin: 0px 7px 50px 7px;
+//     }
+
+//     &__image {
+//       margin-bottom: 10px;
+//     }
+
+//     &__title {
+//       font-size: 3.2rem;
+//       margin-bottom: 20px;
+//     }
+
+//     &__desc {
+//       font-size: 1.9rem;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+
+// @media(min-width:1300px) {
+//   .c-introduction {
+//     &__box {
+//       margin: 0px 15px 50px 15px;
+//     }
+//   }
+// }

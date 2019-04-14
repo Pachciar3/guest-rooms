@@ -1,0 +1,27 @@
+.o-ico-text {
+  text-decoration: none;
+  color: #FFF;
+  font-style: normal;
+  display: inline-flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 3px;
+
+    &--reverse {
+      transform: rotate(90deg);
+    }
+
+    &--red {
+      color: #983b05;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .o-ico-text {
+    &__icon {
+      margin-right: 5px;
+    }
+  }
+}

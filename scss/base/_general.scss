@@ -1,0 +1,48 @@
+html,body{
+  font-size: 10px;
+  font-family: 'Calibri', sans-serif;
+  background-color: #dbdbdb;
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; 
+  background-color: #FFF;
+}
+
+.reset-map{
+  height: 400px;
+  width: 100%;
+  border: 0px;
+}
+
+main{
+  padding: 20px 10px;
+  > section{
+    margin-bottom: 45px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
+.u-mb-1{
+  margin-bottom: 1rem !important;
+}
+.u-lg-mb-6{
+  @media(min-width: 1024px){
+    margin-bottom: 6rem !important;
+  }
+}
+.transform-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(min-width:1024px){
+  main{
+    padding: 35px 30px;
+  }
+}

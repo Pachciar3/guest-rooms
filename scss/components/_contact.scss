@@ -1,0 +1,42 @@
+.contact {
+  &__address {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 20px;
+    &__list{
+      list-style: none;
+    }
+    &__link{
+      font-size: 1.7rem;
+      margin-bottom: 4px;
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+@media(min-width: 700px){
+  .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__address {
+      flex-grow: 1;
+      max-width: 360px;
+      padding: 20px;
+      &__link{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        letter-spacing: .8px;
+        transition: color .2s;
+        &:hover{
+          color: #983b05;
+        }
+      }
+    }
+    &__map{
+      flex-basis: 50%;
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.interactive-map {
+  &__legend {
+    font-size: 1.7rem;
+  }
+
+  &__link {
+    margin-right: 10px;
+    color: #000;
+
+    &:hover {
+      color: #983b05;
+    }
+  }
+}
+
+@media(min-width:1024px) {
+  .interactive-map {
+    &__legend {
+      padding-left:10px;
+    }
+
+    &__map {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}

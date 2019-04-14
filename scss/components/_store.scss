@@ -1,0 +1,98 @@
+.c-product {
+  overflow: hidden;
+  background-color: #FaFaFa;
+  width: 280px;
+  margin: 0px auto 20px auto;
+
+  &__img {
+    height: 160px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info-con {
+    padding: 5px 10px 10px 10px;
+  }
+
+  &__name-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  &__price {
+    text-align: center;
+    font-family: "Century Gothic";
+    color: #983b05;
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+
+  &__desc {
+    padding-top: 5px;
+    font-family: "Century Gothic";
+    font-size: 1.6rem;
+  }
+}
+
+@media(min-width:530px) {
+  .c-store {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .c-product {
+    flex-basis: calc(50% - 10px);
+    margin: 0px 5px 20px 5px;
+  }
+}
+
+@media(min-width:710px) {
+  .c-store {
+    max-width: initial;
+    justify-content: center;
+  }
+
+  .c-product {
+    flex-basis: calc(33.33% - 10px);
+  }
+}
+
+@media(min-width:850px) {
+  .c-product__info-con {
+    padding: 15px 18px 20px 18px;
+  }
+}
+
+@media(min-width:1024px) {
+  .c-product {
+    margin: 0px 10px 20px 10px;
+    flex-basis: 290px;
+
+    &__price {
+      font-size: 2.6rem;
+    }
+
+    &__desc {
+      padding: 5px 10px 10px 5px;
+    }
+  }
+}
+
+@media(min-width:1200px) {
+  .c-product {
+    flex-basis: calc(25% - 20px);
+  }
+}

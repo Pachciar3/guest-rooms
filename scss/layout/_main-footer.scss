@@ -1,0 +1,19 @@
+.main-footer{
+  background-color: #414040;
+  color: #FFF;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 1.8rem;
+  &__page{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__link{
+    text-decoration: none;
+    color: #FFF;
+    transition: color .2s linear;
+    &:hover{
+      color: #000;
+    }
+  }
+}
